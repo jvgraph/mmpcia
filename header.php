@@ -8,10 +8,12 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <div class="header">
+        <header class="header">
+            <!--LOGO-->
             <div class="header__logo">
                 <?php include_once('includes/logo.php');?>
             </div>
+            <!--NAV-->
             <div class="header__nav">
                 <?php
                     wp_nav_menu( array(
@@ -21,6 +23,7 @@
                     );
 				?>
             </div>
+            <!--SOCIAL NAV-->
             <div class="header__social_nav">
                 <?php
                     wp_nav_menu( array(
@@ -32,4 +35,4 @@
                     ) );
                 ?>
             </div>
-        </div>
+        </header>

@@ -1,0 +1,21 @@
+.container{
+    @include center(100%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row{
+    @include center(100%);
+    padding-left: -20px;
+    padding-right: -20px;
+}
+
+//HEADER STYLES
+.header{
+    @extend .container;
+    height: 70px;
+    background-color: #000;
+    color: $white;
+    .header__logo{
+        @include column(2/12);
+    }
+}

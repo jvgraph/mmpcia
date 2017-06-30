@@ -1,0 +1,26 @@
+//NAV STYLES
+.header__nav{
+    @include column(6/12);
+    display: table;
+    height: 70px;
+    .menu-main-container{
+        height: 100%;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: table;
+        height: 100%;
+        .menu-item{
+            list-style: none;
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            a{
+                padding: 25px 10px;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}

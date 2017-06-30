@@ -24,3 +24,7 @@
         }
     }
 }
+//social media nav
+.header__social_nav{
+    @include column(2/12);
+}

@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php
+get_header(); ?>
         <div class="article">
             <?php
                 if(have_posts()): while(have_posts()): the_post();
@@ -16,4 +17,5 @@
                 endif;
             ?>
         </div>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

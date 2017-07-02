@@ -52,7 +52,7 @@ section {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 48.5%;
+  width: 58.15625%;
   margin-left: 0%;
   margin-right: 3%;
   display: table;
@@ -72,19 +72,24 @@ section {
     height: 100%; }
     .header__nav ul .menu-item {
       list-style: none;
+      padding-left: 20px;
       display: table-cell;
       vertical-align: middle;
       height: 100%; }
       .header__nav ul .menu-item a {
         padding: 25px 10px;
         text-decoration: none;
-        color: #FFF; }
+        color: #FFF;
+        text-transform: lowercase;
+        letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 1em; }
 
 .header__social_nav {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 14.16667%;
+  width: 16.3125%;
   margin-left: 0%;
   margin-right: 3%; }
   .header__social_nav::after {
@@ -94,9 +99,9 @@ section {
   .header__social_nav:last-child {
     margin-right: 0%; }
 
-.container, .header {
+.container {
   width: auto;
-  max-width: 100%;
+  max-width: 82%;
   float: none;
   display: block;
   margin-right: auto;
@@ -105,7 +110,7 @@ section {
   padding-right: 0;
   padding-left: 20px;
   padding-right: 20px; }
-  .container::after, .header::after {
+  .container::after {
     content: '';
     display: table;
     clear: both; }
@@ -135,7 +140,7 @@ section {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 14.16667%;
+    width: 19.53125%;
     margin-left: 0%;
     margin-right: 3%; }
     .header .header__logo::after {
@@ -144,3 +149,37 @@ section {
       clear: both; }
     .header .header__logo:last-child {
       margin-right: 0%; }
+    .header .header__logo img {
+      vertical-align: middle;
+      padding: 5px 0px; }
+
+#main {
+  padding-top: 40px; }
+
+.article {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .article::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .article:last-child {
+    margin-right: 0%; }
+
+aside {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  aside::after {
+    content: '';
+    display: table;
+    clear: both; }
+  aside:last-child {
+    margin-right: 0%; }

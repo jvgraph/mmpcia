@@ -9,30 +9,32 @@
     </head>
     <body>
         <header class="header">
-            <!--LOGO-->
-            <div class="header__logo">
-                <?php include_once('includes/logo.php');?>
-            </div>
-            <!--NAV-->
-            <div class="header__nav">
-                <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'primary',
-                        'menu_class'     => 'primary-menu',
-                        ) 
-                    );
-				?>
-            </div>
-            <!--SOCIAL NAV-->
-            <div class="header__social_nav">
-                <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'social',
-                        'menu_class'     => 'social-links-menu',
-                        'depth'          => 1,
-                        'link_before'    => '<span class="screen-reader-text">',
-                        'link_after'     => '</span>',
-                    ) );
-                ?>
+            <div class="container">
+                <!--LOGO-->
+                <div class="header__logo">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="mmpcia">
+                </div>
+                <!--NAV-->
+                <div class="header__nav">
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'primary',
+                            'menu_class'     => 'primary-menu',
+                            ) 
+                        );
+                    ?>
+                </div>
+                <!--SOCIAL NAV-->
+                <div class="header__social_nav">
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'social',
+                            'menu_class'     => 'social-links-menu',
+                            'depth'          => 1,
+                            'link_before'    => '<span class="screen-reader-text">',
+                            'link_after'     => '</span>',
+                        ) );
+                    ?>
+                </div>
             </div>
         </header>

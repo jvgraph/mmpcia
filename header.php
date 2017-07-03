@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bitter:700|Montserrat" rel="stylesheet">
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
         <header class="header">
             <div class="container">
                 <!--LOGO-->

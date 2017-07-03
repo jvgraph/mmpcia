@@ -5,7 +5,10 @@ include('includes/aq_resizer.php');
         //deregister styles
 
         wp_enqueue_style( 'mmpcia-fonts', 'https://fonts.googleapis.com/css?family=Bitter:700|Montserrat' );
-        wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/style.css' );
+        if( is_home() || is_front_page() ){
+                    wp_enqueue_style( 'slider-style', get_stylesheet_directory_uri() . '/css/flexslider.css' );
+        }
+        //wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/style.css' );
         wp_enqueue_style( 'app-style', get_stylesheet_directory_uri() . '/css/app.css' );
     }
     add_action('wp_enqueue_scripts', 'mmpcia_scripts');

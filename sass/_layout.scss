@@ -1,14 +1,3 @@
-.container{
-    @include center(82%);
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.row{
-    @include center(100%);
-    padding-left: -20px;
-    padding-right: -20px;
-}
-
 //HEADER STYLES
 .header{
     height: 70px;
@@ -33,4 +22,9 @@
 }
 aside{
     @include column(4/12);
+}
+
+//FOOTER
+.footer{
+    background-color: $black;
 }

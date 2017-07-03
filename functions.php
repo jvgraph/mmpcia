@@ -1,4 +1,5 @@
 <?php
+include('includes/aq_resizer.php');
 //SCRIPTS AND STYLES
     function mmpcia_scripts() {
         //deregister styles

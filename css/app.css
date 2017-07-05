@@ -1,9 +1,3 @@
-body {
-  font-family: "Montserrat", sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Bitter", serif; }
-
 /* Document
    ========================================================================== */
 /**
@@ -68,6 +62,20 @@ section {
 .spacing, .mission-statement, .community {
   margin-bottom: 40px;
   padding-top: 40px; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bitter", serif; }
+
+h2 {
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      margin-bottom: 8px;
+      padding-bottom: 8px; } }
 
 #site-navigation #menu-main li a, #site-navigation #menu-main li.menu-item a, #site-navigation ul li a, #site-navigation ul li.menu-item a {
   text-decoration: none;
@@ -137,6 +145,29 @@ aside {
         clear: both; }
       #mega-footer ul li.mega-item:last-child {
         margin-right: 0%; }
+      @media only screen and (max-width: 767px) {
+        #mega-footer ul li.mega-item {
+          border-right: none;
+          float: left;
+          clear: none;
+          text-align: inherit;
+          width: 100%;
+          margin-left: 0%;
+          margin-right: 3%;
+          clear: both;
+          float: none;
+          height: auto !important;
+          margin-bottom: 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid #ed1c24;
+          min-width: 100%;
+          padding: 0 30px; }
+          #mega-footer ul li.mega-item::after {
+            content: '';
+            display: table;
+            clear: both; }
+          #mega-footer ul li.mega-item:last-child {
+            margin-right: 0%; } }
       #mega-footer ul li.mega-item:first-child {
         float: left;
         clear: none;
@@ -176,20 +207,45 @@ aside {
 
 .mission-statement {
   text-align: center;
-  padding: 20px 6em; }
+  padding: 40px 6em 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .mission-statement {
+      padding: 40px 3% 0; } }
+  @media only screen and (max-width: 767px) {
+    .mission-statement {
+      padding: 20px 3% 0; } }
 
 .community .community-item {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333%;
+  width: 31.33333%;
   margin-left: 0%;
-  margin-right: 0%;
+  margin-right: 3%;
   position: relative; }
   .community .community-item::after {
     content: '';
     display: table;
     clear: both; }
+  .community .community-item:last-child {
+    margin-right: 0%; }
+  @media only screen and (max-width: 767px) {
+    .community .community-item {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 3%;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 0 30px; }
+      .community .community-item::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .community .community-item:last-child {
+        margin-right: 0%; } }
   .community .community-item h2 {
     position: absolute;
     width: 100%;

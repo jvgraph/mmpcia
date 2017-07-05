@@ -30,11 +30,24 @@ aside{
         margin: 0;
         padding: 0;
         @extend .clearfix;
+        
          li.mega-item{
             @include column(4/12);
             list-style: none;
             border-right: 1px solid #1c1c1c;
             height: 182px;
+            @include screen('mobile'){
+                border-right: none;
+                @include column(12/12);
+                clear: both;
+                float: none;
+                height: auto !important;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                border-bottom: 1px solid $primary_color;
+                min-width: 100%;
+                padding: 0 30px;
+            }
             &:first-child{
                 @include column(2/12);
             }
@@ -66,16 +79,28 @@ aside{
 ///HOME mission-statement
 .mission-statement{
     text-align: center;
-    padding: 20px 6em;
+    padding: 40px 6em 0;
     @extend .spacing;
+    @include screen('tablet') {
+        padding: 40px 3% 0;
+    }
+    @include screen('mobile') {
+        padding: 20px 3% 0;
+    }
 }
 
 //HOME community
 .community{
     @extend .spacing;
     .community-item{
-        @include span(4/12);
+        @include column(4/12);
         position: relative;
+        @include screen('mobile'){
+            @include column(12/12);
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0 30px;
+        }
         h2{
             position: absolute;
             width: 100%;

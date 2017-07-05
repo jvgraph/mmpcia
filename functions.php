@@ -29,4 +29,8 @@ function mmpcia_remove_version() {
     return '';
 }
 add_filter('the_generator', 'mmpcia_remove_version');
-?>
+
+///ADD ME MENU
+register_nav_menus( array(
+    'mmpcia_social' => __( 'Social Links', 'twentysixteen' ),
+) );

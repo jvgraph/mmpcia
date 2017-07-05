@@ -29,7 +29,7 @@
             <li class="mega-item">
                 <?php
                     wp_nav_menu( array(
-                        'theme_location' => 'social',
+                        'theme_location' => 'mmpcia_social',
                         'menu_class'     => 'social-links-menu',
                         'depth'          => 1,
                     ) );

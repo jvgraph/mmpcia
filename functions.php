@@ -19,7 +19,7 @@ include('includes/aq_resizer.php');
 
     add_action( 'twentysixteen_credits', 'twentysixteen_clean_design_credits_handler' );
     function twentysixteen_clean_design_credits_handler(){ ?>
-        Copyright © 2009 MMPCIA, All Rights Reserved | PO BOX 3270 New York 10027 | P: 212.369.4241 | E: info@mmpcia.org |
+        Copyright &copy; 2009 MMPCIA, All Rights Reserved
         <?php
     }
 

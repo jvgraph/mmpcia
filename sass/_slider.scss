@@ -3,8 +3,44 @@
         .main-slides{
             @include column(8/12);
         }
-        .events{
+        .featured-events{
             @include column(4/12);
+        }
+    }
+    .slides{
+        li{
+            position: relative;
+            .flex-caption{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: .556em;
+                background-color: rgba(0, 0, 0, .5);
+                h2{
+                    a{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .featured-events{
+        .half{
+            position: relative;
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            h2{
+                position: absolute;
+                padding: .556em 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                background-color: rgba(255, 255, 255, .5);
+            }
         }
     }
 }

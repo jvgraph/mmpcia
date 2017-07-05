@@ -1,16 +1,6 @@
 //HEADER STYLES
-.header{
-    height: 70px;
-    background-color: #000;
-    color: $white;
-    width: 100%;
-    .header__logo{
-        @include column(3.5/16);
-        img{
-            vertical-align: middle;
-            padding: 5px 0px;
-        }
-    }
+#masthead{
+    margin-bottom: 40px;
 }
 
 ///MAIN CONTENT
@@ -28,15 +18,75 @@ aside{
 .footer{
     background-color: $black;
 }
+.site-info{
+    text-align: center;
+}
 //MEGA FOOTER
 #mega-footer{
     @extend .clearfix;
+    padding-top: 40px;
+    border-top: 1px solid $primary_color;
     ul{
         margin: 0;
         padding: 0;
         @extend .clearfix;
-        li{
-            @include column(3/12);
+         li.mega-item{
+            @include column(4/12);
+            list-style: none;
+            border-right: 1px solid #1c1c1c;
+            height: 182px;
+            &:first-child{
+                @include column(2/12);
+            }
+            &:last-child{
+                @include column(2/12);
+                border-right: none;
+                ul{
+                    li{
+                        border-right: none;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+            .half{
+                ul{
+                    li{
+                        border-right: none !important;
+                        display: block;
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+///HOME mission-statement
+.mission-statement{
+    text-align: center;
+    padding: 20px 6em;
+    @extend .spacing;
+}
+
+//HOME community
+.community{
+    @extend .spacing;
+    .community-item{
+        @include span(4/12);
+        position: relative;
+        h2{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            padding: .556em 0;
+            background-color: rgba(255, 255, 255, .5);
+            a{
+                color: $primary_color;
+            }
         }
     }
 }

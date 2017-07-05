@@ -1,12 +1,10 @@
 /* Document
    ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-
 html {
   margin: 0px;
   padding: 0px;
@@ -15,15 +13,12 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   min-height: 100%;
 }
-
 /* Sections
    ========================================================================== */
-
 /**
  * Remove the margin in all browsers (opinionated).
  */
-
-body {
+body, html {
   margin: 0px;
   padding: 0px;
   background: $white;
@@ -49,3 +44,17 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.row{
+    @extend .clearfix; 
+}

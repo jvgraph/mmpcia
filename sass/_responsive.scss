@@ -1,0 +1,48 @@
+@media screen and (min-width: 56.875em){
+.wp-custom-logo .site-header-main {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .256em 0em;
+    background-color: #000;
+}
+}
+@media screen and (min-width: 44.375em){
+body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99
+}
+}
+@media screen and (min-width: 44.375em){
+    .site, #page{
+        margin: 0 !important;
+    }
+}
+.site-inner{
+    margin: 0;
+    min-width: 100%;
+}
+.site-header{
+    background-color: $black;
+}
+@media screen and (min-width: 61.5625em){
+    .site-header {
+        padding: 0 4.5455%;
+    }
+}
+////MENU
+@media screen and (max-width: 910px){
+    .menu-toggle{
+        color: $white;
+        &:focus, &:hover{
+            color: $primary_color;
+            border-color: $primary_color;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.home_slider{
+    .container{
+        .main-slides{
+            @include column(8/12);
+        }
+        .events{
+            @include column(4/12);
+        }
+    }
+}

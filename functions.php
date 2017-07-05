@@ -8,18 +8,21 @@ include('includes/aq_resizer.php');
         if( is_home() || is_front_page() ){
                     wp_enqueue_style( 'slider-style', get_stylesheet_directory_uri() . '/css/flexslider.css' );
         }
-        //wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
         wp_enqueue_style( 'app-style', get_stylesheet_directory_uri() . '/css/app.css' );
+
+        wp_enqueue_script( 'flex', get_stylesheet_directory_uri() . '/js/flex.js', array ( 'jquery' ), 1.1, true);
+        wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.1, true);
     }
     add_action('wp_enqueue_scripts', 'mmpcia_scripts');
 
-    function unhook_parent_style() {
 
-    wp_dequeue_style( 'twentysixteen-style' );
-    wp_deregister_style( 'twentysixteen-style' );
-
+    add_action( 'twentysixteen_credits', 'twentysixteen_clean_design_credits_handler' );
+    function twentysixteen_clean_design_credits_handler(){ ?>
+        Copyright © 2009 MMPCIA, All Rights Reserved | PO BOX 3270 New York 10027 | P: 212.369.4241 | E: info@mmpcia.org |
+        <?php
     }
-    add_action( 'wp_enqueue_scripts', 'unhook_parent_style', 20 );
+
 
 /// removing wp version from header
 function mmpcia_remove_version() {

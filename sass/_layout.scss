@@ -28,3 +28,15 @@ aside{
 .footer{
     background-color: $black;
 }
+//MEGA FOOTER
+#mega-footer{
+    @extend .clearfix;
+    ul{
+        margin: 0;
+        padding: 0;
+        @extend .clearfix;
+        li{
+            @include column(3/12);
+        }
+    }
+}

@@ -1,35 +1,12 @@
-//NAV STYLES
-.header__nav{
-    @include column(9.5/16);
-    display: table;
-    height: 70px;
-    .menu-main-container{
-        height: 100%;
-    }
-    ul{
-        margin: 0;
-        padding: 0;
-        display: table;
-        height: 100%;
-        .menu-item{
-            list-style: none;
-            padding-left: 20px;
-            display: table-cell;
-            vertical-align: middle;
-            height: 100%;
+#site-navigation{
+    #menu-main, ul{
+        li, li.menu-item{
             a{
-                padding: 25px 10px;
                 text-decoration: none;
                 color: $white;
-                text-transform: lowercase;
                 letter-spacing: 2px;
-                font-weight: 300;
-                font-size: 1em;
+                text-transform: capitalize;
             }
         }
     }
-}
-//social media nav
-.header__social_nav{
-    @include column(3/16);
 }

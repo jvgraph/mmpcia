@@ -2,7 +2,23 @@
 #masthead{
     margin-bottom: 40px;
 }
-
+.site-branding{
+    margin: 0 8% 0 0 !important;
+}
+#social-navigation{
+    display: block;
+    margin: 0 0 0 auto;
+    a::before{
+        content: '';
+    }
+    .menu-item{
+        &:first-child{
+            background-image: url("../images/social-media-logos/facebook.svg");
+            background-repeat: no-repeat;
+            background-size: 80%;
+        }
+    }
+}
 ///MAIN CONTENT
 #main{
     padding-top: 40px;
@@ -24,7 +40,7 @@ aside{
 //MEGA FOOTER
 #mega-footer{
     @extend .clearfix;
-    padding-top: 40px;
+    padding: 40px 4.5455% 0;
     border-top: 1px solid $primary_color;
     ul{
         margin: 0;

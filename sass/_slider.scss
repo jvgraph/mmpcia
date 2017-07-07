@@ -2,9 +2,21 @@
     .container{
         .main-slides{
             @include column(8/12);
+            @include screen('tablet'){
+                @include column(12/12);
+            }
+            @include screen('mobile'){
+                @include column(12/12);
+            }
         }
         .featured-events{
             @include column(4/12);
+            @include screen('tablet'){
+                @include column(12/12);
+            }
+            @include screen('mobile'){
+                @include column(12/12);
+            }
         }
     }
     .slides{
@@ -31,6 +43,12 @@
             margin-bottom: 15px;
             &:last-child{
                 margin-bottom: 0;
+            }
+            @include screen('tablet'){
+                @include column(6/12);
+            }
+            @include screen('mobile'){
+                @include column(12/12);
             }
             h2{
                 position: absolute;

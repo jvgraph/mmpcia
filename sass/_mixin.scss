@@ -1,3 +1,4 @@
+//MEDIA QUERIES
 @mixin screen($size) {
   $desktop: "(min-width: 1024px)";
   $tablet: "(min-width: 768px) and (max-width: 1023px)";
@@ -23,7 +24,7 @@
     }
   }
 }
-
+//OPACITY
 @mixin opacity($opacity) {
   opacity: $opacity;
   $opacity-ie: $opacity * 100;

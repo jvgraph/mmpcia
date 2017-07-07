@@ -45,6 +45,20 @@ body:not(.custom-background-image):before, body:not(.custom-background-image):af
             border-color: $primary_color;
         }
     }
+    .site-branding{
+        margin: 0 auto 0 0 !important;
+    }
+    #social-navigation{
+        display: none;
+    }
+    #masthead{
+        padding: 1.9375em 4.6923%; 
+    }
+}
+@media screen and (max-width: 1044px){
+    #social-navigation{
+        display: none;
+    }
 }
 
 // .wrapper {

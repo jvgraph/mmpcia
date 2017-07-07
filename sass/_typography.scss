@@ -4,12 +4,6 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: $title__font;
 }
-h2{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-
-    @include screen('mobile') {
-        margin-bottom: 8px;
-        padding-bottom: 8px;
-    }
+h1, h2{
+    font-weight: normal;
 }

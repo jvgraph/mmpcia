@@ -78,6 +78,12 @@ h1, h2 {
   letter-spacing: 2px;
   text-transform: capitalize; }
 
+#site-navigation #menu-main li.menu-item-has-children ul, #site-navigation #menu-main li.menu-item.menu-item-has-children ul, #site-navigation ul li.menu-item-has-children ul, #site-navigation ul li.menu-item.menu-item-has-children ul {
+  background-color: #000; }
+  #site-navigation #menu-main li.menu-item-has-children ul li, #site-navigation #menu-main li.menu-item.menu-item-has-children ul li, #site-navigation ul li.menu-item-has-children ul li, #site-navigation ul li.menu-item.menu-item-has-children ul li {
+    color: #FFF;
+    background-color: inherit; }
+
 #masthead {
   margin-bottom: 40px; }
   #masthead .header--search-form input {

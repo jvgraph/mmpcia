@@ -7,6 +7,15 @@
                 letter-spacing: 2px;
                 text-transform: capitalize;
             }
+            &.menu-item-has-children{
+                ul{
+                    background-color: $black;
+                    li{
+                        color: $white;
+                        background-color: inherit;
+                    }
+                }
+            }
         }
     }
 }

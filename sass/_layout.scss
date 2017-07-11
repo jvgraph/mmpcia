@@ -1,9 +1,15 @@
 //HEADER STYLES
 #masthead{
     margin-bottom: 40px;
+    .header--search-form{
+        input{
+            display: none;
+        }
+    }
 }
 .site-branding{
-    margin: 0 8% 0 0 !important;
+    margin-right: 8% !important;
+    margin-top: 1.1rem !important;
 }
 #social-navigation{
     display: block;
@@ -36,6 +42,14 @@ aside{
 }
 .site-info{
     text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+.site-footer{
+    padding-bottom: 0.5em;
+}
+.site-footer .site-title:after{
+    content: none !important;
 }
 //MEGA FOOTER
 #mega-footer{

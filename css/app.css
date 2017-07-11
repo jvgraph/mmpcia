@@ -80,9 +80,12 @@ h1, h2 {
 
 #masthead {
   margin-bottom: 40px; }
+  #masthead .header--search-form input {
+    display: none; }
 
 .site-branding {
-  margin: 0 8% 0 0 !important; }
+  margin-right: 8% !important;
+  margin-top: 1.1rem !important; }
 
 #social-navigation {
   display: block;
@@ -129,7 +132,15 @@ aside {
   background-color: #000; }
 
 .site-info {
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  max-width: 100%; }
+
+.site-footer {
+  padding-bottom: 0.5em; }
+
+.site-footer .site-title:after {
+  content: none !important; }
 
 #mega-footer {
   padding: 40px 4.5455% 0;
@@ -403,6 +414,11 @@ aside {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5); }
 
+.flex-direction-nav a:before {
+  font-size: 32px;
+  color: #FFF;
+  font-weight: lighter; }
+
 @media screen and (min-width: 56.875em) {
   .wp-custom-logo .site-header-main {
     -webkit-align-items: center;
@@ -443,8 +459,6 @@ aside {
     .menu-toggle:focus, .menu-toggle:hover {
       color: #ed1c24;
       border-color: #ed1c24; }
-  .site-branding {
-    margin: 0 auto 0 0 !important; }
   #social-navigation {
     display: none; }
   #masthead {

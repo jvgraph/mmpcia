@@ -62,6 +62,10 @@
 
 					</div><!-- .site-header-menu -->
 				<?php endif; ?>
+				<div class="header--search-form">
+					<button type="search" class="btn--search"></button>
+					<?php get_search_form( ); ?>
+				</div>
 				<nav id="social-navigation" class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentysixteen' ); ?>">
 								<?php
 									wp_nav_menu( array(

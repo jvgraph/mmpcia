@@ -10,7 +10,8 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-<div class="sponsors">
+<section class="sponsors">
+    <h2>proudly sponsored by</h2>
     <?php 
         if( have_rows('sponsors', 'option') ): 
     ?>
@@ -38,7 +39,7 @@
     </ul>
 
 <?php endif; ?>
-</div>
+</section>
 		</div><!-- .site-content -->
 
 

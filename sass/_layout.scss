@@ -145,3 +145,26 @@ aside{
         }
     }
 }
+
+//HOME SPONSORS
+.sponsors{
+    margin-bottom: 60px;
+    @extend .clearfix;
+    h2{
+        text-align: center;
+        @extend .spacing;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            @include column(1/4);
+            list-style: none;
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

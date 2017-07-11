@@ -43,7 +43,7 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-.clearfix:after, .row:after, #mega-footer:after, #mega-footer ul:after {
+.clearfix:after, .row:after, #mega-footer:after, #mega-footer ul:after, .sponsors:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -51,15 +51,15 @@ section {
   clear: both;
   height: 0; }
 
-* html .clearfix, * html .row, * html #mega-footer, * html #mega-footer ul, #mega-footer * html ul {
+* html .clearfix, * html .row, * html #mega-footer, * html #mega-footer ul, #mega-footer * html ul, * html .sponsors {
   zoom: 1; }
 
 /* IE6 */
-*:first-child + html .clearfix, *:first-child + html .row, *:first-child + html #mega-footer, *:first-child + html #mega-footer ul, #mega-footer *:first-child + html ul {
+*:first-child + html .clearfix, *:first-child + html .row, *:first-child + html #mega-footer, *:first-child + html #mega-footer ul, #mega-footer *:first-child + html ul, *:first-child + html .sponsors {
   zoom: 1; }
 
 /* IE7 */
-.spacing, .mission-statement, .community {
+.spacing, .mission-statement, .community, .sponsors h2 {
   margin-bottom: 40px;
   padding-top: 40px; }
 
@@ -281,6 +281,31 @@ aside {
     background-color: rgba(255, 255, 255, 0.5); }
     .community .community-item h2 a {
       color: #ed1c24; }
+
+.sponsors {
+  margin-bottom: 60px; }
+  .sponsors h2 {
+    text-align: center; }
+  .sponsors ul {
+    padding: 0;
+    margin: 0; }
+    .sponsors ul li {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 22.75%;
+      margin-left: 0%;
+      margin-right: 3%;
+      list-style: none; }
+      .sponsors ul li::after {
+        content: '';
+        display: table;
+        clear: both; }
+      .sponsors ul li:last-child {
+        margin-right: 0%; }
+      .sponsors ul li img {
+        max-width: 100%;
+        height: auto; }
 
 .home_slider .container .main-slides {
   float: left;

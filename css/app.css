@@ -151,6 +151,8 @@ aside {
 #mega-footer {
   padding: 40px 4.5455% 0;
   border-top: 1px solid #ed1c24; }
+  #mega-footer h2 {
+    margin-bottom: 20px; }
   #mega-footer ul {
     margin: 0;
     padding: 0; }
@@ -224,11 +226,19 @@ aside {
           border-right: none;
           width: 100%;
           display: block; }
-      #mega-footer ul li.mega-item .half ul li {
+      #mega-footer ul li.mega-item .quick-links ul li {
         border-right: none !important;
-        display: block;
-        float: none;
-        width: 100%; }
+        display: inline-block;
+        float: left;
+        clear: none;
+        text-align: inherit;
+        width: 50%;
+        margin-left: 0%;
+        margin-right: 0%; }
+        #mega-footer ul li.mega-item .quick-links ul li::after {
+          content: '';
+          display: table;
+          clear: both; }
 
 .mission-statement {
   text-align: center;

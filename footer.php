@@ -58,17 +58,16 @@
                 </p>
             </li>
             <li class="mega-item">
-                <h2>Quick Links</h2>
                 <div class="row">
-                    <div class="half"></div>
-                    <div class="half">
+                    <nav class="quick-links">
+                    <h2>Quick Links</h2>
                         <?php
 							wp_nav_menu( array(
-								'theme_location' => 'primary',
-								'menu_class'     => 'primary-menu',
+								'theme_location' => 'quick_link',
+								'menu_class'     => 'quick-menu',
 							) );
 						?>
-                    </div>
+                    </nav>
                 </div>
             </li>
             <li class="mega-item">
@@ -86,17 +85,10 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			
 			<div class="site-info">
-				<?php
-					/**
-					 * Fires before the twentysixteen footer text for footer customization.
-					 *
-					 * @since Twenty Sixteen 1.0
-					 */
-					do_action( 'twentysixteen_credits' );
-				?>
 				<span class="site-title">
+                Copyright &copy; 2009 MMPCIA, All Rights Reserved
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php bloginfo( 'name' ); ?>
+						 <?php bloginfo( 'name' ); ?>
 					</a>
 				</span>
 			</div><!-- .site-info -->

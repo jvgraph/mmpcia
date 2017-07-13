@@ -56,6 +56,9 @@ aside{
     @extend .clearfix;
     padding: 40px 4.5455% 0;
     border-top: 1px solid $primary_color;
+    h2{
+        margin-bottom: 20px;
+    }
     ul{
         margin: 0;
         padding: 0;
@@ -92,13 +95,12 @@ aside{
                     }
                 }
             }
-            .half{
+            .quick-links{
                 ul{
                     li{
                         border-right: none !important;
-                        display: block;
-                        float: none;
-                        width: 100%;
+                        display: inline-block;
+                        @include span(6/12);
                     }
                 }
             }

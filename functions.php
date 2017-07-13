@@ -2,6 +2,14 @@
 require('includes/page-options.php');
 include('includes/aq_resizer.php');
 
+
+////adding menu
+
+	register_nav_menus( array(
+		'quick_link' => __( 'Quick Menu', 'twentysixteen' ),
+	) );
+
+
 //SCRIPTS AND STYLES
     function mmpcia_scripts() {
         //deregister styles
@@ -17,13 +25,6 @@ include('includes/aq_resizer.php');
         wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.1, true);
     }
     add_action('wp_enqueue_scripts', 'mmpcia_scripts');
-
-
-    add_action( 'twentysixteen_credits', 'twentysixteen_clean_design_credits_handler' );
-    function twentysixteen_clean_design_credits_handler(){ ?>
-        Copyright &copy; 2009 MMPCIA, All Rights Reserved
-        <?php
-    }
 
 
 /// removing wp version from header

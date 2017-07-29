@@ -1,6 +1,17 @@
 //HEADER STYLES
 #masthead{
     margin-bottom: 40px;
+    background-color: $white;
+    border-bottom: 2px solid $primary_color;
+    #site-header-menu{
+        #site-navigation{
+            .menu-item{
+                a{
+                    color: $primary_color;
+                }
+            }
+        }
+    }
     .header--search-form{
         input{
             display: none;
@@ -10,6 +21,12 @@
 .site-branding{
     margin-right: 8% !important;
     margin-top: 1.1rem !important;
+    @include screen('mobile'){
+        margin-right: auto !important;
+    }
+    @include screen('tablet'){
+        margin-right: auto !important;
+    }
 }
 #social-navigation{
     display: block;
@@ -67,7 +84,7 @@ aside{
          li.mega-item{
             @include column(4/12);
             list-style: none;
-            border-right: 1px solid #1c1c1c;
+            border-right: 1px solid #ccc;
             height: 182px;
             @include screen('mobile'){
                 border-right: none;
@@ -140,17 +157,45 @@ aside{
             left: 0;
             text-align: center;
             padding: .556em 0;
-            background-color: rgba(255, 255, 255, .5);
+            background-color: rgba(255, 255, 255, .75);
             a{
                 color: $primary_color;
             }
         }
     }
 }
-
+////JOIN MEMBER + NEWSLTTER
+.join{
+    @extend .clearfix;
+    @extend .spacing;
+    .join--item{
+        @include column(3/6);
+        text-align: center;
+        h2{
+            text-align: center;
+        }
+        .join--us{
+            margin-top: 60px;
+            a{
+                display: inline-block;
+                padding: .9rem 1.222rem;
+                color: $white;
+                background-color: $primary_color;
+                font-size: 1.166rem;
+            }
+        }
+        @include screen('tablet'){
+            @include column(3/6);
+        }
+        @include screen('mobile'){
+            @include column(6/6);
+        }
+    }
+}
 //HOME SPONSORS
 .sponsors{
     margin-bottom: 60px;
+    @include center(65%);
     @extend .clearfix;
     h2{
         text-align: center;
@@ -162,10 +207,33 @@ aside{
         li{
             @include column(1/4);
             list-style: none;
-
+             @include screen('mobile'){
+                 @include column(2/4);
+             }
             img{
                 max-width: 100%;
                 height: auto;
+            }
+        }
+    }
+}
+.page-title{
+    margin: 0 0 60px 0;
+}
+/////BOAR PAGE
+#primary{
+    .board--members{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            @extend .clearfix;
+            img{
+                float: left;
+                padding-right: 10px;
             }
         }
     }

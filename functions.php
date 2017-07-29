@@ -8,7 +8,11 @@ include('includes/aq_resizer.php');
 	register_nav_menus( array(
 		'quick_link' => __( 'Quick Menu', 'twentysixteen' ),
 	) );
-
+///exerpt length
+function mmpcia_excerpt( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'mmpcia_excerpt', 999 );
 
 //SCRIPTS AND STYLES
     function mmpcia_scripts() {

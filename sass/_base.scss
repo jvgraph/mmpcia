@@ -54,7 +54,9 @@ section {
 }
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
+a{
+  color: $primary_color;
+}
 .row{
     @extend .clearfix; 
 }

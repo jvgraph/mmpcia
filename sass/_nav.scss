@@ -1,3 +1,8 @@
+.site-header-main{
+    a{
+        color: $primary_color;
+    }
+}
 #site-navigation{
     #menu-main, ul{
         li, li.menu-item{
@@ -9,7 +14,7 @@
             }
             &.menu-item-has-children{
                 ul{
-                    background-color: $black;
+                    background-color: $white;
                     li{
                         color: $white;
                         background-color: inherit;

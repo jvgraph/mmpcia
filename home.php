@@ -74,31 +74,20 @@
         </div>
     </div>
 </div>
-<!--MISSION-->
-<div class="mission-statement">
-    <div class="row">
-        <h2>Mission Statement</h2>
-        <?php 
-            if( have_posts() ): 
-                while( have_posts() ): the_post(); 
-                    the_content();
-                endwhile; 
-            endif; 
-            
-            ?>
-    </div>
-</div>
+
 <!--COMMUNITY-->
 <div class="community">
     <div class="row">
  
 
     <?php
+    $cat_name = array('education','real-state','recreation');
+    
     $do_not_duplicate = array();
 
     $categories = get_categories(
         array(
-            'include'=> '5,6,7'
+            'include'=> "$cat_name[0], $cat_name[1], $cat_name[2]"
         )
     );
     $do_not_duplicate = array();
@@ -145,6 +134,38 @@
     </div>
 </div>
 
+<!--MISSION-->
+<div class="mission-statement">
+    <div class="row">
+        <h2>Mission Statement</h2>
+        <?php 
+            if( have_posts() ): 
+                while( have_posts() ): the_post(); 
+                    the_content();
+                endwhile; 
+            endif; 
+            
+            ?>
+    </div>
+</div>
+
+<div class="join">
+    <div class="join--item">
+        <h2>Become a Member</h2>
+        <div class="join--us">
+            <a href="#">Join Us</a>
+        </div>
+    </div>
+    <div class="join--item">
+        <h2>Subscribe to Our Newsletter</h2>
+        <div class="subscribe--form">
+            <form>
+                <input type="email" name="email" value="" placeholder="youremail@email.com">
+                <input type="button" name="" value="Subscribe">
+            </form>
+        </div>
+    </div>
+</div>
 <?php
 get_footer();
 ?>

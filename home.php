@@ -87,7 +87,7 @@
 
     $categories = get_categories(
         array(
-            'include'=> "$cat_name[0], $cat_name[1], $cat_name[2]"
+            'include'=> '5,6,7'
         )
     );
     $do_not_duplicate = array();
@@ -106,7 +106,6 @@
     
         if ( $query->have_posts() ) {
             $posttype = get_post_type(get_the_ID());?>
-    
                 <?php while ( $query->have_posts() ) {
     
                     $query->the_post();

@@ -49,6 +49,7 @@
             }
             @include screen('mobile'){
                 @include column(12/12);
+                padding: 0 30px;
             }
             h2{
                 position: absolute;

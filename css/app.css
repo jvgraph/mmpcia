@@ -60,7 +60,14 @@ section {
 
 /* IE7 */
 a {
-  color: #ed1c24; }
+  color: #ed1c24;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+  a:hover {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s; }
 
 .spacing, .mission-statement, .community, .join, .sponsors h2 {
   margin-bottom: 40px;
@@ -82,13 +89,19 @@ h1, h2 {
   text-decoration: none;
   color: #FFF;
   letter-spacing: 2px;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
 
 #site-navigation #menu-main li.menu-item-has-children ul, #site-navigation #menu-main li.menu-item.menu-item-has-children ul, #site-navigation ul li.menu-item-has-children ul, #site-navigation ul li.menu-item.menu-item-has-children ul {
   background-color: #FFF; }
   #site-navigation #menu-main li.menu-item-has-children ul li, #site-navigation #menu-main li.menu-item.menu-item-has-children ul li, #site-navigation ul li.menu-item-has-children ul li, #site-navigation ul li.menu-item.menu-item-has-children ul li {
     color: #FFF;
-    background-color: inherit; }
+    background-color: inherit;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s; }
 
 #masthead {
   margin-bottom: 40px;
@@ -117,10 +130,16 @@ h1, h2 {
   #social-navigation .menu-item {
     background-image: url("../images/social-media-logos/instagram.svg");
     background-repeat: no-repeat;
-    background-size: 75%; }
+    background-size: 75%;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s; }
     #social-navigation .menu-item:hover {
       opacity: 0.6;
-      filter: alpha(opacity=60); }
+      filter: alpha(opacity=60);
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s; }
     #social-navigation .menu-item:first-child {
       background-image: url("../images/social-media-logos/facebook.svg"); }
     #social-navigation .menu-item:last-child {
@@ -403,13 +422,22 @@ aside {
       width: 22.75%;
       margin-left: 0%;
       margin-right: 3%;
-      list-style: none; }
+      list-style: none;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s; }
       .sponsors ul li::after {
         content: '';
         display: table;
         clear: both; }
       .sponsors ul li:last-child {
         margin-right: 0%; }
+      .sponsors ul li:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s; }
       @media only screen and (max-width: 767px) {
         .sponsors ul li {
           float: left;

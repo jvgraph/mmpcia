@@ -56,6 +56,10 @@ section {
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 a{
   color: $primary_color;
+  @include transition(all .4s);
+  &:hover{
+    @include transition(all .4s);
+  }
 }
 .row{
     @extend .clearfix; 

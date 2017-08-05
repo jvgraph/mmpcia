@@ -30,3 +30,15 @@
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity = $opacity-ie); //IE8
 }
+////TRANSLATE Y AXIS
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+        -moz-transform: translateY($e);
+            transform: translateY($e);
+}
+//// TRANSITION ANIMATION
+@mixin transition($e){
+    -webkit-transition: $e;
+        -moz-transition: $e;
+             transition: $e;
+}

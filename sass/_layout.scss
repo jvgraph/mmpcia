@@ -38,8 +38,10 @@
         background-image: url("../images/social-media-logos/instagram.svg");
         background-repeat: no-repeat;
         background-size: 75%;
+        @include transition(all .4s);
         &:hover{
             @include opacity(.6);
+            @include transition(all .4s);
         }
         &:first-child{
             background-image: url("../images/social-media-logos/facebook.svg");
@@ -232,6 +234,11 @@ aside{
         li{
             @include column(1/4);
             list-style: none;
+            @include transition(all .5s);
+            &:hover{
+                @include opacity(.7);
+                @include transition(all .5s);
+            }
              @include screen('mobile'){
                  @include column(2/4);
              }

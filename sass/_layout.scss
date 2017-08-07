@@ -54,7 +54,6 @@
             width: 32px;
             height: 32px;
         }
-
     }
 }
 ///MAIN CONTENT
@@ -284,5 +283,16 @@ aside{
                 margin: 10px 0 0 0;
             }
         }
+    }
+}
+
+
+///////////////
+//// SIDEBAR
+//////////////
+#secondary.sidebar.widget-area{
+    @media only screen and(max-width:907px){
+        width: 100%;
+        padding: 15px 20px !important;
     }
 }

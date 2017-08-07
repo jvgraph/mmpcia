@@ -485,6 +485,11 @@ aside {
     #primary .board--members li p {
       margin: 10px 0 0 0; }
 
+@media only screen and (max-width: 907px) {
+  #secondary.sidebar.widget-area {
+    width: 100%;
+    padding: 15px 20px !important; } }
+
 .home_slider .container .main-slides {
   float: left;
   clear: none;
@@ -665,7 +670,8 @@ aside {
 
 @media screen and (max-width: 910px) {
   .menu-toggle {
-    color: #FFF; }
+    color: #ed1c24;
+    border-color: #ed1c24; }
     .menu-toggle:focus, .menu-toggle:hover {
       color: #ed1c24;
       border-color: #ed1c24; }
@@ -677,3 +683,91 @@ aside {
 @media screen and (max-width: 1044px) {
   #social-navigation {
     display: none; } }
+
+@media only screen and (max-width: 767px) {
+  #primary {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #primary {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+.three-col {
+  padding: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .three-col {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 50%;
+      margin-left: 0%;
+      margin-right: 0%; }
+      .three-col::after {
+        content: '';
+        display: table;
+        clear: both; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .three-col {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 50%;
+      margin-left: 0%;
+      margin-right: 0%; }
+      .three-col::after {
+        content: '';
+        display: table;
+        clear: both; } }
+  @media only screen and (max-width: 767px) {
+    .three-col {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%; }
+      .three-col::after {
+        content: '';
+        display: table;
+        clear: both; } }
+
+.full-col {
+  padding: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .full-col {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%; }
+      .full-col::after {
+        content: '';
+        display: table;
+        clear: both; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .full-col {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%; }
+      .full-col::after {
+        content: '';
+        display: table;
+        clear: both; } }
+  @media only screen and (max-width: 767px) {
+    .full-col {
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%; }
+      .full-col::after {
+        content: '';
+        display: table;
+        clear: both; } }

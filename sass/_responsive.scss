@@ -39,7 +39,8 @@ body:not(.custom-background-image):before, body:not(.custom-background-image):af
 ////MENU
 @media screen and (max-width: 910px){
     .menu-toggle{
-        color: $white;
+        color: $primary_color;
+        border-color: $primary_color;
         &:focus, &:hover{
             color: $primary_color;
             border-color: $primary_color;
@@ -69,3 +70,38 @@ body:not(.custom-background-image):before, body:not(.custom-background-image):af
 //     width: 85%;
 //   }
 // }
+#primary{
+    @include screen('mobile'){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @include screen('tablet'){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+////////// LAYOUT
+.three-col{
+    padding: 10px;
+    @include screen('desktop'){
+        @include span(6/12);
+    }
+    @include screen('tablet'){
+        @include span(6/12);
+    }
+    @include screen('mobile'){
+        @include span(12/12);
+    }
+}
+.full-col{
+    padding: 10px;
+    @include screen('desktop'){
+        @include span(12/12);
+    }
+    @include screen('tablet'){
+        @include span(12/12);
+    }
+    @include screen('mobile'){
+        @include span(12/12);
+    }
+}

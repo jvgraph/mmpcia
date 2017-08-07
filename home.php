@@ -28,7 +28,7 @@
                         ?>
                         <li>
                             
-                            <img src="<?php echo esc_url( $image ); ?>" alt="Your Image alt" />
+                            <img src="<?php echo esc_url( $image ); ?>" alt="<?php?>" />
 
                             <div class="flex-caption">
                                 <h2>

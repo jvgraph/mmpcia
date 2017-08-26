@@ -73,6 +73,9 @@ a {
   margin-bottom: 40px;
   padding-top: 40px; }
 
+.border--top, .join, .sponsors {
+  border-top: 1px dotted #ccc; }
+
 body {
   font-family: "Montserrat", sans-serif; }
 

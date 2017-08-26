@@ -20,11 +20,11 @@
             $img_url = wp_get_attachment_url( $thumb,'full'); // Get img URL
             $image   = aq_resize( $img_url, 480, 270, true ); // Resize & crop img 
 ?>
-    <?php if(is_page('about')){ ?>
-    <div class="full-col">
-    <?php }else{ ?>
-    <div class="three-col">
-    <?php } ?>
+    <?php if( is_page( 27 ) ): ?>
+    <div <?php post_class( 'full-col')?>>
+    <?php else: ?>
+    <div <?php post_class( 'three-col')?>>
+    <?php endif; ?>
         <div class="post--item">
         <?php if(has_post_thumbnail()): ?>
             <img src="<?php echo esc_url( $image ); ?>" alt="<?php the_title(); ?>" />
@@ -54,7 +54,7 @@
             $img_url = wp_get_attachment_url( $thumb,'full'); // Get img URL
             $image   = aq_resize( $img_url, 480, 270, true ); // Resize & crop img 
 ?>
-    <div class="three-col">
+    <div <?php post_class( 'three-col')?>>
         <div class="post--item">
         <img src="<?php echo esc_url( $image ); ?>" alt="<?php the_title(); ?>" />
         <h2> 

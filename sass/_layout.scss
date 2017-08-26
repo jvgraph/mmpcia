@@ -183,6 +183,7 @@ aside{
 .join{
     @extend .clearfix;
     @extend .spacing;
+    @extend .border--top;
     .join--item{
         @include column(3/6);
         text-align: center;
@@ -223,6 +224,7 @@ aside{
     margin-bottom: 60px;
     @include center(65%);
     @extend .clearfix;
+    @extend .border--top;
     h2{
         text-align: center;
         @extend .spacing;

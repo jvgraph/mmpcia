@@ -32,8 +32,7 @@ get_header();
 	?>
 	</div>
 </div>
-
-<?php include 'partials/join-us.php' ?>
 <?php
-get_footer();
+	include 'partials/join-us.php';
+	get_footer();
 ?>

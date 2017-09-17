@@ -9,7 +9,7 @@
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
  */
-include 'partials/sponsors.php'
+include 'partials/sponsors.php';
 ?>
 </div><!-- .site-content -->
 <div id="mega-footer" class="container">

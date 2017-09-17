@@ -774,3 +774,23 @@ aside {
         content: '';
         display: table;
         clear: both; } }
+
+.home_slider .flexslider .flex-caption h2 {
+  font-size: 1.5rem;
+  color: red; }
+
+@media only screen and (max-width: 767px) {
+  .join {
+    padding: 0 20px; } }
+
+@media only screen and (max-width: 767px) {
+  .join .join--item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px; }
+    .join .join--item:last-child {
+      border-bottom: none; }
+    .join .join--item h2 {
+      margin-bottom: 20px; } }

@@ -20,5 +20,8 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "jeet": "^7.1.0"
+  },
+  "dependencies": {
+    "gulp-livereload": "^3.8.1"
   }
 }

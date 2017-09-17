@@ -1,0 +1,20 @@
+.join{
+  @include screen('mobile'){
+    padding: 0 20px;
+  }
+  .join--item{
+    @include screen('mobile'){
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 40px;
+      &:last-child{
+        border-bottom: none;
+      }
+      h2{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

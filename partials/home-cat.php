@@ -10,7 +10,7 @@ $do_not_duplicate = array();
 
 $categories = get_categories(
     array(
-        'include'=> '5,6,7'
+        'include'=> '24, 27, 28'
     )
 );
 $do_not_duplicate = array();

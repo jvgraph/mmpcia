@@ -1,0 +1,21 @@
+.community-page{
+  .community{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    article{
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid #ccc;
+      h2{
+        padding: 0;
+        margin-bottom: 30px;
+      }
+      footer{
+        font-size: 12px;
+        padding: 10px 0;
+      }
+    }
+
+  }
+}

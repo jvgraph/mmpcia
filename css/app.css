@@ -794,3 +794,18 @@ aside {
       border-bottom: none; }
     .join .join--item h2 {
       margin-bottom: 20px; } }
+
+.community-page .community {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .community-page .community article {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ccc; }
+    .community-page .community article h2 {
+      padding: 0;
+      margin-bottom: 30px; }
+    .community-page .community article footer {
+      font-size: 12px;
+      padding: 10px 0; }

@@ -805,7 +805,10 @@ aside {
     border-bottom: 1px solid #ccc; }
     .community-page .community article h2 {
       padding: 0;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 1.7rem; }
     .community-page .community article footer {
       font-size: 12px;
       padding: 10px 0; }
+    .community-page .community article .post-image {
+      margin-bottom: 20px; }

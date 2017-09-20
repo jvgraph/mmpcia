@@ -18,7 +18,7 @@
 			$image   = aq_resize( $img_url, 560, 310, true ); // Resize & crop img 
 		?>
 		<li>			
-			<img src="<?php echo esc_url( $image ); ?>" alt="<?php?>" />
+			<img src="<?php echo esc_url( $image ); ?>" alt="<?php the_title() ?>" />
 					<div class="flex-caption">
 							<h2>
 								<a href="<?php the_permalink(); ?>">

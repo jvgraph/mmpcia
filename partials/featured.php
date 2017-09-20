@@ -1,28 +1,35 @@
 <div class="featured-events">
 	<div class="row">
 	<?php 
-	$original_query = $wp_query;
-	$wp_query = null;
-	$args = array(
-		'posts_per_page'=>5, 
-		'tag' => 'feature'
+	$feat_args = array(
+		'post_type' => 'page', 
+		'post__in' => array(5014, 5016)
 	);
-	$wp_query = new WP_Query( $args );
+	$ft_pages = new WP_Query( $feat_args );
 	?>
 		<?php 
-			if( have_rows( 'contribute', 'option' ) ):     
-				while( have_rows( 'contribute', 'option' ) ): the_row(); ?>
+			if( $ft_pages->have_posts() ): 
+			while( $ft_pages->have_posts( ) ): $ft_pages->the_post();
+			$feat_thumb   = get_post_thumbnail_id();
+
+			$feat_img_url = wp_get_attachment_url( $feat_thumb,'full'); // Get img URL
+
+			$feat_image   = aq_resize( $feat_img_url, 560, 313, true );    
+
+				; ?>
 		<div class="half">
-			<?php the_field('contribute_image'); ?>
-			<img src="<?php the_sub_field('contribute_image'); ?>" alt="">
+			<?php if( has_post_thumbnail() ): ?>
+			<img src="<?php echo esc_url( $feat_image ); ?>" alt="<?php the_title() ?>" />
+		<?php endif; ?>
 			<h2>
-				<a href="<?php the_sub_field('contribute_link'); ?>">
-					<?php the_sub_field('title'); ?>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_title() ?>
 				</a>
 			</h2>
 		</div>
 		<?php 
 		endwhile;
+		wp_reset_postdata();
 		endif; ?>
 	</div>
 </div>

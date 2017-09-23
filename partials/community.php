@@ -22,7 +22,7 @@
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
         <?php the_excerpt() ?>
         <footer>
-           Post in Category : <?php the_category( ' ' ); ?> | Posted on: <?php the_date(); ?>
+           Post in Category: <?php the_category( ' ' ); ?> | Posted on: <?php the_date(); ?>
         </footer>
       </article>
       <?php endwhile; ?>

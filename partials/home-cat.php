@@ -2,8 +2,7 @@
 <div class="community">
 	<div class="row">
 	<?php
-	$cat_name = array('education','real-state','recreation');
-	$do_not_duplicate = array();
+	
 	$categories = get_categories(
 		array(
 			'include'=> '24, 27, 28'

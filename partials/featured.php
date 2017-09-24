@@ -15,7 +15,8 @@
 	$ger_involve = array(
 		'cat' => $category->term_id,
 		'post_type' => 'post',
-		'posts_per_page' => 1
+		'posts_per_page' => 1,
+		'meta_query' => array( 'key' => '_thumbnail_id' )
 	);
 
 	$do_not_duplicate = array();

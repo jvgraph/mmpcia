@@ -795,6 +795,15 @@ aside {
     .join .join--item h2 {
       margin-bottom: 20px; } }
 
+.event_item h5 {
+  font-size: 2rem; }
+
+.event_item .event_data {
+  line-height: 1.2;
+  margin-top: 10px; }
+  .event_item .event_data.event_date {
+    margin-top: 20px; }
+
 .community-page .community {
   padding: 0;
   margin: 0;

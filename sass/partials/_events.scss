@@ -1,0 +1,12 @@
+.event_item{
+  h5{
+    font-size: 2rem;
+  }
+  .event_data{
+    line-height: 1.2;
+    margin-top: 10px;
+    &.event_date{
+      margin-top: 20px;
+    }
+  }
+}

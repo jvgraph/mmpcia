@@ -106,6 +106,20 @@ h1, h2 {
     -moz-transition: all 0.4s;
     transition: all 0.4s; }
 
+.menu-toggle, .thanks_button_div input[type="button"]:hover, button:hover {
+  margin: 1.076923077em 0 !important;
+  padding: 0.769230769em !important;
+  background-color: transparent;
+  border: 1px solid #d1d1d1;
+  font-size: 13px;
+  text-transform: uppercase; }
+  .menu-toggle:hover, .menu-toggle:focus, .thanks_button_div input[type="button"]:hover:hover, .thanks_button_div input[type="button"]:hover:focus, button:hover:hover, button:hover:focus {
+    border: 1px solid #d1d1d1;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 1.076923077em 0 !important;
+    padding: 0.769230769em !important; }
+
 #masthead {
   margin-bottom: 40px;
   background-color: #FFF;

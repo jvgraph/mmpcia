@@ -26,3 +26,18 @@
         }
     }
 }
+.menu-toggle, .thanks_button_div input[type="button"]:hover, button:hover {
+    margin: 1.076923077em 0 !important;
+    padding: 0.769230769em !important;
+    background-color: transparent;
+    border: 1px solid #d1d1d1;
+    font-size: 13px;
+    text-transform: uppercase;
+    &:hover, &:focus{
+        border: 1px solid #d1d1d1;
+        font-size: 13px;
+        text-transform: uppercase; 
+        margin: 1.076923077em 0 !important;
+        padding: 0.769230769em !important;
+    }
+}
